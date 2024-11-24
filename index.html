@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinduta Ak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            text-align: center;
+        }
+        #pindutaButton {
+            background-color: #fbbf24;
+            color: #000000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #pindutaButton:hover {
+            background-color: #f59e0b;
+            transform: scale(1.05);
+        }
+        #messageContainer {
+            display: none;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #messageImage {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        #messageText {
+            font-size: 24px;
+            font-weight: bold;
+            color: #dc2626;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="pindutaButton">PINDUTA AK PARA KA MAGKAKWARTA</button>
+        <div id="messageContainer">
+            <img id="messageImage" src="467457918_437251879178722_5539543294575551460_n.jpg" alt="Pagnilulu la">
+            <p id="messageText">PAGNILULU LA</p>
+        </div>
+    </div>
+
+    <script>
+        const pindutaButton = document.getElementById('pindutaButton');
+        const messageContainer = document.getElementById('messageContainer');
+
+        pindutaButton.addEventListener('click', function() {
+            pindutaButton.style.display = 'none';
+            messageContainer.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
